@@ -147,7 +147,7 @@
 			The SM flux linkage model is similar to the IM model:
 			\begin{itemize}
 				\item<2-> Assuming a cylindrical rotor, the self-induced stator flux remains identical to the IM model (derived from rotating field theory chapter).
-				\item<3-> In contrast to the IM model \figref{fig:Inductive_coupling_stator_rotor_IM}, the SM's rotor field coil is a represented by a single winding.
+				\item<3-> In contrast to the IM model \figref{fig:Inductive_coupling_stator_rotor_IM}, the SM's rotor field coil is represented by a single winding.
 				\item<4-> The coupling of the stator and rotor remains rotor position-dependent (not explicitly shown on the right due to space limitations).
 			\end{itemize}
 		\end{column}
@@ -174,19 +174,19 @@
 		\renewcommand*{\arraystretch}{1.15}
 		\begin{split}
 			\uncover<+->{
-			\bm{\psi}^\mathrm{s}_\mathrm{s,abc}(t) & =\begin{bmatrix}
-					                                          L_\mathrm{s}            & -\frac{M_\mathrm{s}}{2} & -\frac{M_\mathrm{s}}{2} \\
-					                                          -\frac{M_\mathrm{s}}{2} & L_\mathrm{s}            & -\frac{M_\mathrm{s}}{2} \\
-					                                          -\frac{M_\mathrm{s}}{2} & -\frac{M_\mathrm{s}}{2} & L_\mathrm{s}
-				                                          \end{bmatrix} \bm{i}^\mathrm{s}_\mathrm{s,abc}(t)}\uncover<+->{ +  M_{\mathrm{r}}\frac{N_\mathrm{s}}{N_\mathrm{r}} \begin{bmatrix}
-					                                                                                                                                                             \cos(\varepsilon_\mathrm{r,el}(t))                  \\
-					                                                                                                                                                             \cos(\varepsilon_\mathrm{r,el}(t) - \frac{2\pi}{3}) \\
-					                                                                                                                                                             \cos(\varepsilon_\mathrm{r,el}(t) + \frac{2\pi}{3})
-				                                                                                                                                                             \end{bmatrix}i^\mathrm{r}_\mathrm{f}(t),} \\
+					           \bm{\psi}^\mathrm{s}_\mathrm{s,abc}(t) & =\begin{bmatrix}
+						           L_\mathrm{s}            & -\frac{M_\mathrm{s}}{2} & -\frac{M_\mathrm{s}}{2} \\
+						           -\frac{M_\mathrm{s}}{2} & L_\mathrm{s}            & -\frac{M_\mathrm{s}}{2} \\
+						           -\frac{M_\mathrm{s}}{2} & -\frac{M_\mathrm{s}}{2} & L_\mathrm{s}
+					           \end{bmatrix} \bm{i}^\mathrm{s}_\mathrm{s,abc}(t)}\uncover<+->{ +  M_{\mathrm{r}}\frac{N_\mathrm{s}}{N_\mathrm{r}} \begin{bmatrix}
+						                                                                          \cos(\varepsilon_\mathrm{r,el}(t))                  \\
+						                                                                          \cos(\varepsilon_\mathrm{r,el}(t) - \frac{2\pi}{3}) \\
+						                                                                          \cos(\varepsilon_\mathrm{r,el}(t) + \frac{2\pi}{3})
+					                                                                          \end{bmatrix}i^\mathrm{r}_\mathrm{f}(t),} \\
 			\uncover<+->{
-			\psi^\mathrm{r}_\mathrm{f}(t)          & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t)                                                                                                                                             \\ &+  M_{\mathrm{s}}\frac{N_\mathrm{r}}{N_\mathrm{s}} \begin{bmatrix}
-					\cos(\varepsilon_\mathrm{r,el}(t)) & \cos(\varepsilon_\mathrm{r,el}(t) - \frac{2\pi}{3}) & \cos(\varepsilon_\mathrm{r,el}(t) + \frac{2\pi}{3})
-				\end{bmatrix}\bm{i}^\mathrm{s}_\mathrm{s,abc}(t)}
+					           \psi^\mathrm{r}_\mathrm{f}(t)          & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t)                                                                                                                                             \\ &+  M_{\mathrm{s}}\frac{N_\mathrm{r}}{N_\mathrm{s}} \begin{bmatrix}
+						           \cos(\varepsilon_\mathrm{r,el}(t)) & \cos(\varepsilon_\mathrm{r,el}(t) - \frac{2\pi}{3}) & \cos(\varepsilon_\mathrm{r,el}(t) + \frac{2\pi}{3})
+					           \end{bmatrix}\bm{i}^\mathrm{s}_\mathrm{s,abc}(t)}
 		\end{split}
 		\label{eq:Flux_linkage_model_SM_abc}
 	\end{equation}
@@ -237,11 +237,11 @@
 	\begin{equation}
 		\begin{split}
 			\uncover<+->{
-			\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t) & = \bm{T}_{23} \bm{\psi}^\mathrm{s}_\mathrm{s,abc}(t) = \overbrace{\bm{T}_{23} \bm{L}_{\mathrm{s,abc}}\bm{T}_{32}}^{\bm{L}_{\mathrm{s},\alpha\beta}} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) +  M_{\mathrm{r}}\frac{N_\mathrm{s}}{N_\mathrm{r}} \bm{T}_{23}\begin{bmatrix}
-				                                                                                                                                                                                                                                                                                                                 \cos(\varepsilon_\mathrm{r,el}(t))                  \\
-				                                                                                                                                                                                                                                                                                                                 \cos(\varepsilon_\mathrm{r,el}(t) - \frac{2\pi}{3}) \\
-				                                                                                                                                                                                                                                                                                                                 \cos(\varepsilon_\mathrm{r,el}(t) + \frac{2\pi}{3})
-			                                                                                                                                                                                                                                                                                                                 \end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t)\\}
+					           \bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t) & = \bm{T}_{23} \bm{\psi}^\mathrm{s}_\mathrm{s,abc}(t) = \overbrace{\bm{T}_{23} \bm{L}_{\mathrm{s,abc}}\bm{T}_{32}}^{\bm{L}_{\mathrm{s},\alpha\beta}} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) +  M_{\mathrm{r}}\frac{N_\mathrm{s}}{N_\mathrm{r}} \bm{T}_{23}\begin{bmatrix}
+						           \cos(\varepsilon_\mathrm{r,el}(t))                  \\
+						           \cos(\varepsilon_\mathrm{r,el}(t) - \frac{2\pi}{3}) \\
+						           \cos(\varepsilon_\mathrm{r,el}(t) + \frac{2\pi}{3})
+					           \end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t)\\}
 			\uncover<+->{                                  & = (L_\mathrm{s} +\nicefrac{M_\mathrm{s}}{2}) \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) + M_\mathrm{r}\frac{N_\mathrm{s}}{N_\mathrm{r}} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t))\\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t)}
 		\end{split}
 	\end{equation}
@@ -277,9 +277,9 @@
 	\begin{equation}
 		\begin{alignedat}{2}
 			\uncover<+->{
-			\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t) & = L'_\mathrm{s} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) &  & + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t))\\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t),\\}
+					           \bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t) & = L'_\mathrm{s} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) &  & + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t))\\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t),\\}
 			\uncover<+->{
-			\psi^\mathrm{r}_\mathrm{f}(t)                  & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t)                     &  & + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) \\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}\T\bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t).}
+					           \psi^\mathrm{r}_\mathrm{f}(t)                  & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t)                     &  & + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) \\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}\T\bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t).}
 		\end{alignedat}
 		\label{eq:Flux_linkage_model_SM_alpha_beta}
 	\end{equation}
@@ -300,7 +300,7 @@
 	\begin{equation}
 		\begin{split}
 			\uncover<+->{
-			T(t)          & = \frac{3}{2} p (\bm{i}_\mathrm{s,\alpha\beta}^\mathrm{s}(t))\T\bm{J}\bm{\psi}_\mathrm{s,\alpha\beta}^\mathrm{s}(t)\\}
+					           T(t)          & = \frac{3}{2} p (\bm{i}_\mathrm{s,\alpha\beta}^\mathrm{s}(t))\T\bm{J}\bm{\psi}_\mathrm{s,\alpha\beta}^\mathrm{s}(t)\\}
 			\uncover<+->{ & = \frac{3}{2} p (\bm{i}_\mathrm{s,\alpha\beta}^\mathrm{s}(t))\T\bm{J}\left(L'_\mathrm{s} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t))\\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t)\right)\\}
 			\uncover<+->{ & = \frac{3}{2} p M_\mathrm{fs} i^\mathrm{r}_{\mathrm{f}} \left(\cos(\varepsilon_\mathrm{r,el}(t))i_{\mathrm{s,\beta}}^\mathrm{s}(t) - \sin(\varepsilon_\mathrm{r,el}(t))i_{\mathrm{s,\alpha}}^\mathrm{s}(t)\right).}
 		\end{split}
@@ -348,8 +348,8 @@
 	The most important equations of the cylindrical SM model in the  $\alpha\beta$ coordinates are:
 	\begin{equation*}
 		\begin{alignedat}{4}
-			 &  & \mbox{Stator voltage:}                     &  & \quad\bm{u}^\mathrm{s}_\mathrm{s,\alpha\beta}(     & t) &  & = R_\mathrm{s} \bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)+ \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t),                                                                                     \\
-			 &  & \mbox{Rotor / field winding voltage:}      &  & \quad u^\mathrm{r}_\mathrm{f}(                     & t) &  & = R_\mathrm{f}i^\mathrm{r}_\mathrm{f}(t)+\frac{\mathrm{d}}{\mathrm{d}t}\psi^\mathrm{r}_\mathrm{f}(t),                                                                                                                         \\
+			 &  & \mbox{Stator voltage:}                     &  & \quad\bm{u}^\mathrm{s}_\mathrm{s,\alpha\beta}(     & t) &  & = R_\mathrm{s} \bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)+ \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t),                                                                       \\
+			 &  & \mbox{Rotor / field winding voltage:}      &  & \quad u^\mathrm{r}_\mathrm{f}(                     & t) &  & = R_\mathrm{f}i^\mathrm{r}_\mathrm{f}(t)+\frac{\mathrm{d}}{\mathrm{d}t}\psi^\mathrm{r}_\mathrm{f}(t),                                                                                                           \\
 			 &  & \mbox{Stator flux linkage:}                &  & \quad \bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}( & t) &  & = L'_\mathrm{s} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t))\\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t), \\
 			 &  & \mbox{Rotor / field winding flux linkage:} &  & \psi^\mathrm{r}_\mathrm{f}(                        & t) &  & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) \\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}\T\bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t),    \\
 			 &  & \mbox{Torque:}                             &  & \quad T(                                           & t) &  & = \frac{3}{2} p (\bm{i}_\mathrm{s,\alpha\beta}^\mathrm{s})\T\bm{J}\bm{\psi}_\mathrm{s,\alpha\beta}^\mathrm{s}.
@@ -395,7 +395,7 @@
 	\begin{equation}
 		\begin{split}
 			\uncover<+->{
-			\bm{u}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)                                                                            & = R_\mathrm{s} \bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)+ \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)\\}
+					           \bm{u}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)                                                                            & = R_\mathrm{s} \bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)+ \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)\\}
 			\uncover<+->{\Leftrightarrow \quad \bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el})\bm{u}^\mathrm{s}_\mathrm{s,dq}(t) & = R_\mathrm{s} \bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el})\bm{i}^\mathrm{s}_\mathrm{s,dq}(t)+ \frac{\mathrm{d}}{\mathrm{d}t}(\bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el})\bm{\psi}^\mathrm{s}_\mathrm{s,dq}(t))\\}
 			\uncover<+->{\Leftrightarrow \quad \bm{u}^\mathrm{r}_\mathrm{s,dq}(t)                                                  & = R_\mathrm{s} \bm{i}^\mathrm{r}_\mathrm{s,dq}(t)+ \omega_\mathrm{r,el}(t)\bm{J}\bm{\psi}^\mathrm{r}_\mathrm{s,dq}(t) + \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}^\mathrm{r}_\mathrm{s,dq}(t).}
 		\end{split}
@@ -418,19 +418,19 @@
 		\begin{split}
 			\uncover<+->{\bm{\psi}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)                  & = L'_\mathrm{s} \bm{i}^\mathrm{s}_{\mathrm{s},\alpha\beta}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t))\\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix} i^\mathrm{r}_{\mathrm{f}}(t),			 \\}
 			\uncover<+->{\Leftrightarrow \quad
-			\bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el}) \bm{\psi}_\mathrm{s,dq}(t) & = L'_\mathrm{s}  \bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el})\bm{i}_{\mathrm{s, dq}}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) \\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}i_{\mathrm{f}}(t) \\}
+					           \bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el}) \bm{\psi}_\mathrm{s,dq}(t) & = L'_\mathrm{s}  \bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el})\bm{i}_{\mathrm{s, dq}}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) \\ \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}i_{\mathrm{f}}(t) \\}
 			\uncover<+->{\Leftrightarrow \quad \bm{\psi}_\mathrm{s,dq}(t)                & = L'_\mathrm{s} \bm{i}_{\mathrm{s,dq}}(t) + \underbrace{M_\mathrm{fs} \begin{bmatrix}1 \\ 0 \end{bmatrix}}_{\bm{M}_\mathrm{fs}}i^\mathrm{r}_{\mathrm{f}}(t)} \uncover<+->{= L'_\mathrm{s} \bm{i}_{\mathrm{s,dq}}(t) + \bm{M}_\mathrm{fs}i^\mathrm{r}_{\mathrm{f}}(t).}
 		\end{split}
 		\label{eq:SM_stator_dq_flux_linkage}
 	\end{equation}
 	\onslide<5->
-	while the field winding flux results in
+	In addition, the field winding flux results in
 	\begin{equation}
 		\begin{split}
 			\uncover<+->{\psi^\mathrm{r}_\mathrm{f}(t)                         & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) & \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}\bm{i}^\mathrm{s}_\mathrm{s,\alpha\beta}(t)
-				\\}
+					           \\}
 			\uncover<+->{\Leftrightarrow \quad 	 \psi^\mathrm{r}_\mathrm{f}(t) & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t) + M_\mathrm{fs} \begin{bmatrix}\cos(\varepsilon_\mathrm{r,el}(t)) & \sin(\varepsilon_\mathrm{r,el}(t))\end{bmatrix}  \bm{T}^{-1}_\mathrm{p}(\varepsilon_\mathrm{r,el})\bm{i}^\mathrm{s}_\mathrm{s,dq}(t)
-				\\}
+					           \\}
 			\uncover<+->{\Leftrightarrow \quad \psi^\mathrm{r}_\mathrm{f}(t)   & = L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t) + M_\mathrm{fs} \begin{bmatrix}1 & 0\end{bmatrix} \bm{i}_\mathrm{s,dq}(t)}\uncover<+->{= L_\mathrm{f} i^\mathrm{r}_\mathrm{f}(t) + \bm{M}\T_\mathrm{fs} \bm{i}_\mathrm{s,dq}(t).}
 		\end{split}
 	\end{equation}
@@ -509,17 +509,17 @@
 	From \figref{fig:SM_salient_pole_dq_reluctance} we derive the following stator flux linkage model for the salient pole SM:
 	\begin{equation}
 		\uncover<+->{
-		\bm{\psi}_\mathrm{s,dq}(t) = \underbrace{\begin{bmatrix}
-				L'_\mathrm{s,d} & 0               \\
-				0               & L'_\mathrm{s,q}
-			\end{bmatrix}}_{\bm{L}_\mathrm{s,dq}} \bm{i}_{\mathrm{s,dq}}(t) + M_\mathrm{fs} \begin{bmatrix}1 \\ 0\end{bmatrix} i_{\mathrm{f}}(t)} \uncover<+->{= \bm{L}_\mathrm{s,dq}\bm{i}_{\mathrm{s,dq}}(t) + \bm{M}_\mathrm{fs} i_{\mathrm{f}}(t)}
+				\bm{\psi}_\mathrm{s,dq}(t) = \underbrace{\begin{bmatrix}
+						L'_\mathrm{s,d} & 0               \\
+						0               & L'_\mathrm{s,q}
+					\end{bmatrix}}_{\bm{L}_\mathrm{s,dq}} \bm{i}_{\mathrm{s,dq}}(t) + M_\mathrm{fs} \begin{bmatrix}1 \\ 0\end{bmatrix} i_{\mathrm{f}}(t)} \uncover<+->{= \bm{L}_\mathrm{s,dq}\bm{i}_{\mathrm{s,dq}}(t) + \bm{M}_\mathrm{fs} i_{\mathrm{f}}(t)}
 	\end{equation}
 	\onslide<2->
 	while the rotor field winding flux linkage remains identical to the cylindrical SM case. \onslide<+-> Inserting the stator flux linkage model into the torque equation yields
 	\begin{equation}
 		\begin{split}
 			\uncover<3->{
-			T(t)          & = \frac{3}{2} p (\bm{i}_\mathrm{s,dq})\T\bm{J}\bm{\psi}_\mathrm{s,dq}}
+					           T(t)          & = \frac{3}{2} p (\bm{i}_\mathrm{s,dq})\T\bm{J}\bm{\psi}_\mathrm{s,dq}}
 			\uncover<+->{= \frac{3}{2} p i_\mathrm{s,q}\left[ M_\mathrm{fs} i_{\mathrm{f}} + \left(L'_\mathrm{s,d}-L'_\mathrm{s,q}\right)i_\mathrm{s,d}\right]\\}
 			\uncover<+->{ & = \underbrace{\frac{3}{2} p M_\mathrm{fs} i_\mathrm{s,q}  i_{\mathrm{f}}}_{\mbox{main torque}} + \underbrace{\frac{3}{2} p i_\mathrm{s,q} i_\mathrm{s,d} \left( L'_\mathrm{s,d}-L'_\mathrm{s,q}\right)}_{\mbox{reluctance torque}}.}
 		\end{split}
@@ -612,13 +612,13 @@
 	From the IM model in dq-coordinates (compare \figref{fig:IM_T_ECD_dq}) we introduce the short-circuited damper winding voltage equation:
 	\begin{equation}
 		\uncover<+->{
-		0 = \bm{R}_{\mathrm{r,DQ}} \bm{i}_{\mathrm{r,DQ}}(t) + \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}_{\mathrm{r,DQ}}(t)} \uncover<+->{= \begin{bmatrix}
-				R_\mathrm{r,D} & 0 \\ 0 & R_\mathrm{r,Q}
-			\end{bmatrix} \begin{bmatrix}
-				i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
-			\end{bmatrix} + \frac{\mathrm{d}}{\mathrm{d}t} \begin{bmatrix}
-				\psi_{\mathrm{r,D}}(t) \\ \psi_{\mathrm{r,Q}}(t)
-			\end{bmatrix}.}
+				0 = \bm{R}_{\mathrm{r,DQ}} \bm{i}_{\mathrm{r,DQ}}(t) + \frac{\mathrm{d}}{\mathrm{d}t}\bm{\psi}_{\mathrm{r,DQ}}(t)} \uncover<+->{= \begin{bmatrix}
+					R_\mathrm{r,D} & 0 \\ 0 & R_\mathrm{r,Q}
+				\end{bmatrix} \begin{bmatrix}
+					i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
+				\end{bmatrix} + \frac{\mathrm{d}}{\mathrm{d}t} \begin{bmatrix}
+					\psi_{\mathrm{r,D}}(t) \\ \psi_{\mathrm{r,Q}}(t)
+				\end{bmatrix}.}
 		\label{eq:damper_winding_voltage}
 	\end{equation}
 	\onslide<+->
@@ -644,34 +644,34 @@
 		\begin{split}
 			\uncover<+->{\bm{\psi}_\mathrm{s,dq}(t) & = \bm{L}_\mathrm{s,dq}\bm{i}_{\mathrm{s,dq}}(t) + \bm{M}_\mathrm{fs} i_{\mathrm{f}}(t) + \bm{M}_\mathrm{rs}\bm{i}_{\mathrm{r,DQ}}(t)\\}
 			\uncover<+->{                           & = \begin{bmatrix}
-					                                            L'_\mathrm{s,d} & 0               \\
-					                                            0               & L'_\mathrm{s,q}
-				                                            \end{bmatrix} \begin{bmatrix}
-					                                                          i_{\mathrm{s,d}}(t) \\ i_{\mathrm{s,q}}(t)
-				                                                          \end{bmatrix} + M_\mathrm{fs} \begin{bmatrix}1 \\ 0\end{bmatrix} i_{\mathrm{f}}(t) + \begin{bmatrix}
-					                                                                                                                                               M_\mathrm{dD} & 0             \\
-					                                                                                                                                               0             & M_\mathrm{qQ}
-				                                                                                                                                               \end{bmatrix} \begin{bmatrix}
-					                                                                                                                                                             i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
-				                                                                                                                                                             \end{bmatrix},                             \\[0.75em]}
+						           L'_\mathrm{s,d} & 0               \\
+						           0               & L'_\mathrm{s,q}
+					           \end{bmatrix} \begin{bmatrix}
+						           i_{\mathrm{s,d}}(t) \\ i_{\mathrm{s,q}}(t)
+					           \end{bmatrix} + M_\mathrm{fs} \begin{bmatrix}1 \\ 0\end{bmatrix} i_{\mathrm{f}}(t) + \begin{bmatrix}
+						           M_\mathrm{dD} & 0             \\
+						           0             & M_\mathrm{qQ}
+					           \end{bmatrix} \begin{bmatrix}
+						           i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
+					           \end{bmatrix},                             \\[0.75em]}
 			\uncover<+->{\psi_\mathrm{f}(t)         & = L_\mathrm{f} i_\mathrm{f}(t) + \bm{M}\T_\mathrm{fs} \bm{i}_\mathrm{s,dq}(t) + \bm{M}\T_\mathrm{fr} \bm{i}_\mathrm{r,DQ}(t)\\}
 			\uncover<+->{                           & = L_\mathrm{f} i_\mathrm{f}(t) + M_\mathrm{fs} \begin{bmatrix}1 & 0\end{bmatrix}\begin{bmatrix}
-					                                                                                                                          i_{\mathrm{s,d}}(t) \\ i_{\mathrm{s,q}}(t)
-				                                                                                                                          \end{bmatrix} + M_\mathrm{fr} \begin{bmatrix}1 & 0\end{bmatrix}\begin{bmatrix}
-					                                                                                                                                                                                         i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
-				                                                                                                                                                                                         \end{bmatrix}, \\[0.75em]}
+						           i_{\mathrm{s,d}}(t) \\ i_{\mathrm{s,q}}(t)
+					           \end{bmatrix} + M_\mathrm{fr} \begin{bmatrix}1 & 0\end{bmatrix}\begin{bmatrix}
+						           i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
+					           \end{bmatrix}, \\[0.75em]}
 			\uncover<+->{\bm{\psi}_\mathrm{r,DQ}(t) & = \bm{L}_\mathrm{r,DQ}\bm{i}_{\mathrm{r,DQ}}(t) + \bm{M}_\mathrm{rs}\bm{i}_{\mathrm{s,dq}}(t) + \bm{M}_\mathrm{fr} i_\mathrm{f}(t)\\}
 			\uncover<+->{                           & = \begin{bmatrix}
-					                                            L_\mathrm{D} & 0            \\
-					                                            0            & L_\mathrm{Q}
-				                                            \end{bmatrix} \begin{bmatrix}
-					                                                          i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
-				                                                          \end{bmatrix} + \begin{bmatrix}
-					                                                                          M_\mathrm{dD} & 0             \\
-					                                                                          0             & M_\mathrm{qQ}
-				                                                                          \end{bmatrix} \begin{bmatrix}
-					                                                                                        i_{\mathrm{s,d}}(t) \\ i_{\mathrm{s,q}}(t)
-				                                                                                        \end{bmatrix} + M_\mathrm{fr} \begin{bmatrix}1 \\ 0\end{bmatrix} i_\mathrm{f}(t).}
+						           L_\mathrm{D} & 0            \\
+						           0            & L_\mathrm{Q}
+					           \end{bmatrix} \begin{bmatrix}
+						           i_{\mathrm{r,D}}(t) \\ i_{\mathrm{r,Q}}(t)
+					           \end{bmatrix} + \begin{bmatrix}
+						           M_\mathrm{dD} & 0             \\
+						           0             & M_\mathrm{qQ}
+					           \end{bmatrix} \begin{bmatrix}
+						           i_{\mathrm{s,d}}(t) \\ i_{\mathrm{s,q}}(t)
+					           \end{bmatrix} + M_\mathrm{fr} \begin{bmatrix}1 \\ 0\end{bmatrix} i_\mathrm{f}(t).}
 		\end{split}
 	\end{equation}
 \end{frame}

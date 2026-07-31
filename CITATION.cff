@@ -7,10 +7,14 @@ authors:
 - family-names: "Hölsch"
   given-names: "Lukas"
   orcid: "https://orcid.org/0009-0006-4112-2444"
+- family-names: "Akolkar"
+  given-names: "Pradyumna"
+- family-names: "Haider"
+  given-names: "Arslan"
 title: "Fundamentals of electrical machines and drives"
 date-released: 2024-09-27
 url: "https://github.com/IAS-Uni-Siegen/EMD_course"
-doi: 10.5281/zenodo.14215440 
+doi: 10.5281/zenodo.17440807
 license: CC-BY-4.0
 preferred-citation:
   type: generic
@@ -21,7 +25,11 @@ preferred-citation:
   - family-names: "Hölsch"
     given-names: "Lukas"
     orcid: "https://orcid.org/0009-0006-4112-2444"
+  - family-names: "Akolkar"
+    given-names: "Pradyumna"
+  - family-names: "Haider"
+    given-names: "Arslan"
   title: "Fundamentals of electrical machines and drives"
   year: 2024
   url: "https://github.com/IAS-Uni-Siegen/EMD_course"
-  doi: 10.5281/zenodo.14215440
+  doi: 10.5281/zenodo.17440807
